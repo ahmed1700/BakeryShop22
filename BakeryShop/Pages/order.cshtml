@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model BakeryShop.Pages.orderModel
+@{
+    ViewData["Title"] = "Place Your Order";
+}
+
+<ol id="orderProcess">
+    <li>
+        <span class="step-number">1</span> Choose Item
+    </li>
+    <li class="current">
+        <span class="step-number">2</span> Details and Submit
+    </li>
+    <li>
+        <span class="step-number">3</span> Receipt
+    </li>
+</ol>
+<h1>
+    Place Your Order  : @Model.Product.Name
+</h1>
+
+}
